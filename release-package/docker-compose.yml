@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: http_monitor_web
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./:/app
+      - ./artifacts/release:/app/artifacts/release
+    environment:
+      - FLASK_APP=app/main.py
+      - FLASK_ENV=development
+      - LOG_DIR=/app/artifacts/release
+      - LOG_SECRET=${LOG_SECRET:-changeme-set-in-env}
+    # Read-only root filesystem except for explicitly writable mounts
+    read_only: false
+    security_opt:
+      - no-new-privileges:true
+    command: python app/main.py
