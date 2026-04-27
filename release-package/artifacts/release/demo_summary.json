@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-04-27T06:41:59.030390",
+  "normal_traffic": {
+    "allowed": 10,
+    "blocked": 0,
+    "suspicious": 0
+  },
+  "attack_traffic": {
+    "allowed": 9,
+    "blocked": 21
+  },
+  "server_metrics": {
+    "message": "Too many requests. Rate limit exceeded.",
+    "retry_after_seconds": 60,
+    "status": "blocked"
+  }
+}
