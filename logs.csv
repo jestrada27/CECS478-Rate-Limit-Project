@@ -1,0 +1,3 @@
+timestamp,client_ip,path,status,window_count,hmac
+2026-04-26T01:14:33.275716+00:00,127.0.0.1,/,allowed,1,9f1fdd1fbb1701b6
+2026-04-26T01:14:47.865246+00:00,192.168.1.129,/,allowed,1,398c16863dbb7b16
