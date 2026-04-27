@@ -178,3 +178,6 @@ make metrics
 
 Set `LOG_SECRET` via `.env` file or shell export before `make up`.
 
+## Demo Video 
+
+watch demo video here: https://youtu.be/yqHrpu_F5IU
